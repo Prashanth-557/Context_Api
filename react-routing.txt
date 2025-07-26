@@ -1,0 +1,48 @@
+Routing in React:
+-----------------
+Routing means navigating between different pages (or components) in a React app — like going from "Home" to "About" or "Contact".
+React apps are Single Page Applications (SPA), so routing helps to:
+- Change views without reloading the page.
+- Load only the required component when URL changes.
+- it's not built-in, we need install third pary libarary
+like "npm i react-router-dom"
+--------------------------
+step1 : install react-router-dom
+ > npm i react-router-dom
+-------------------------
+step 2: import BrowserRouter in index.js
+   import { BrowserRouter } from 'react-router-dom';
+    .............
+    ............
+   root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+------------------------------
+step 3: create multiple component like Home.js,About.js,Contact.js......
+ --> create component folder inside you can create 3 component like Home.js,About.js,Contact.js
+
+----------------------------------------
+step 4: import this components into App.js
+
+import Home from './Components/Home';
+import About from './Components/About';
+import Contact from './Components/Contact';
+- here we need to import Link,Route,Routers
+import { Link,Route,Routers } from 'react-router-dom';
+  <a herf="home">Home</a>
+   a --> Link
+   herf --> to 
+   <Link to='/home'>Home</Link>
+   <Link to='/about'>About</Link>
+   <Link to='/contact'>Contact</Link>
+
+<Routes>
+      <Route path='/home' element={<Home/>}></Route>
+      <Route path='/about' element={<About/>}></Route>
+      <Route path='/contact' element={<Contact/>}</Route>
+</Routes>
+
+
+

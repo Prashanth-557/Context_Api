@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "First Post",
+      "author": "John Doe"
+    },
+    {
+      "id": "2",
+      "title": "Second Post",
+      "author": "Jane Smith"
+    },
+    {
+      "id": "af1d"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": 1,
+      "body": "Great post!"
+    },
+    {
+      "id": "2",
+      "postId": 2,
+      "body": "Very informative."
+    }
+  ],
+  "settings": {
+    "theme": "light",
+    "notifications": true
+  },
+  "categories": [
+    {
+      "id": "1",
+      "name": "Technology"
+    },
+    {
+      "id": "2",
+      "name": "Lifestyle"
+    }
+  ]
+}
